@@ -1,4 +1,5 @@
 {
+    "version": 1,
     "name": "InputSystem_Actions",
     "maps": [
         {
@@ -986,6 +987,34 @@
                     "processors": "",
                     "groups": "XR",
                     "action": "TrackedDeviceOrientation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "XR",
+            "id": "b966d052-7f49-4ded-b38f-8c2b45fc6ebb",
+            "actions": [
+                {
+                    "name": "L Grab",
+                    "type": "PassThrough",
+                    "id": "47d254ba-c5bf-4625-aab0-cee37a24ce70",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "6428b23c-e78e-460d-b618-161ca7da76a5",
+                    "path": "<XRController>{LeftHand}/{Grip}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "L Grab",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

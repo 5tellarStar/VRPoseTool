@@ -1156,7 +1156,7 @@ MonoBehaviour:
   stepLength: 0.2
   sideStepLength: 0.1
   stepHeight: 0.3
-  footOffset: {x: 0, y: 0, z: 0}
+  footOffset: {x: 0, y: 0.1, z: 0}
   footRotOffset: {x: 120, y: 0, z: 0}
   footYPosOffset: 0
   rayStartYOffset: 0
@@ -1356,7 +1356,7 @@ MonoBehaviour:
   stepLength: 0.2
   sideStepLength: 0.1
   stepHeight: 0.3
-  footOffset: {x: 0, y: 0, z: 0}
+  footOffset: {x: 0, y: 0.1, z: 0}
   footRotOffset: {x: 120, y: 0, z: 0}
   footYPosOffset: 0
   rayStartYOffset: 0
@@ -1640,13 +1640,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148016724}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0.7071068, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1209118328}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 180}
 --- !u!4 &1176717094 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6483163022523156236, guid: f1e8e1bfafe7fa241ba6b4181f3eba85, type: 3}
@@ -1926,7 +1926,7 @@ Transform:
   m_GameObject: {fileID: 1325708620}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.37191713, y: 1.0251949, z: -0.22131383}
+  m_LocalPosition: {x: -1, y: 0, z: -1}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2205,6 +2205,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanCharacterDummy_F
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: f1e8e1bfafe7fa241ba6b4181f3eba85, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1720c98616a0f194dae551fe7645b49b, type: 2}
     - target: {fileID: 6074774335629440917, guid: f1e8e1bfafe7fa241ba6b4181f3eba85, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.0000004859176
@@ -2380,7 +2384,7 @@ MonoBehaviour:
     ikTarget: {fileID: 1631777551}
     trackingPositionOffset: {x: 0, y: 0, z: 0}
     trackingRotationOffset: {x: 0, y: 0, z: 0}
-  headBodyPositionOffset: {x: 0, y: 0, z: 0}
+  headBodyPositionOffset: {x: 0, y: -0.6, z: 0}
   headBodyYawOffset: 0
 --- !u!114 &1550056624
 MonoBehaviour:
@@ -2397,7 +2401,7 @@ MonoBehaviour:
   animationInputs:
   - animationPropertyName: Left Pinch
     action:
-      m_UseReference: 0
+      m_UseReference: 1
       m_Action:
         m_Name: Action
         m_Type: 0
@@ -2405,12 +2409,20 @@ MonoBehaviour:
         m_Id: bed06b08-9468-48b2-aa02-97fcf7f04965
         m_Processors: 
         m_Interactions: 
-        m_SingletonActionBindings: []
+        m_SingletonActionBindings:
+        - m_Name: 
+          m_Id: 91797ddc-7732-43d6-ba92-c1b02c7dd444
+          m_Path: <OculusTouchController>{LeftHand}/{Trigger}
+          m_Interactions: 
+          m_Processors: 
+          m_Groups: 
+          m_Action: Action
+          m_Flags: 0
         m_Flags: 0
-      m_Reference: {fileID: 0}
+      m_Reference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   - animationPropertyName: Left Grab
     action:
-      m_UseReference: 0
+      m_UseReference: 1
       m_Action:
         m_Name: Action
         m_Type: 0
@@ -2418,12 +2430,20 @@ MonoBehaviour:
         m_Id: bed06b08-9468-48b2-aa02-97fcf7f04965
         m_Processors: 
         m_Interactions: 
-        m_SingletonActionBindings: []
+        m_SingletonActionBindings:
+        - m_Name: 
+          m_Id: 9082248a-83eb-4ccd-976a-9a259f4fc6a3
+          m_Path: <OculusTouchController>{LeftHand}/{Grip}
+          m_Interactions: 
+          m_Processors: 
+          m_Groups: 
+          m_Action: Action
+          m_Flags: 0
         m_Flags: 0
-      m_Reference: {fileID: 0}
+      m_Reference: {fileID: 6558622148059887818, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   - animationPropertyName: Right Pinch
     action:
-      m_UseReference: 0
+      m_UseReference: 1
       m_Action:
         m_Name: Action
         m_Type: 0
@@ -2433,10 +2453,10 @@ MonoBehaviour:
         m_Interactions: 
         m_SingletonActionBindings: []
         m_Flags: 0
-      m_Reference: {fileID: 0}
+      m_Reference: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   - animationPropertyName: Right Grab
     action:
-      m_UseReference: 0
+      m_UseReference: 1
       m_Action:
         m_Name: Action
         m_Type: 0
@@ -2446,8 +2466,13 @@ MonoBehaviour:
         m_Interactions: 
         m_SingletonActionBindings: []
         m_Flags: 0
-      m_Reference: {fileID: 0}
-  animator: {fileID: 0}
+      m_Reference: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  animator: {fileID: 1550056625}
+--- !u!95 &1550056625 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: f1e8e1bfafe7fa241ba6b4181f3eba85, type: 3}
+  m_PrefabInstance: {fileID: 1532673216}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1575233557 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3212869139869525655, guid: f1e8e1bfafe7fa241ba6b4181f3eba85, type: 3}
@@ -2777,7 +2802,7 @@ Transform:
   m_GameObject: {fileID: 1901083539}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.37005505, y: 1.0076342, z: -0.18555224}
+  m_LocalPosition: {x: 1, y: 0, z: -1}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2812,13 +2837,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1917597596}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: 0.7071068, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 486253718}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 180}
 --- !u!1 &2007030326
 GameObject:
   m_ObjectHideFlags: 0
