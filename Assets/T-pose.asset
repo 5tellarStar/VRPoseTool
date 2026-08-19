@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd19d637526614b4f948fe90975e967f, type: 3}
+  m_Name: T-pose
+  m_EditorClassIdentifier: Assembly-CSharp::PoseData
+  rHandPostion: {x: 0.7244417, y: -0.20407689, z: -0.011592201}
+  rHandRotation: {x: -0.041052446, y: 0.08640858, z: 0.76639986, w: 0.6352005}
+  lHandPostion: {x: -0.7304765, y: -0.18323708, z: -0.118283845}
+  lHandRotation: {x: 0.098300144, y: -0.1498879, z: -0.78572875, w: 0.5920314}

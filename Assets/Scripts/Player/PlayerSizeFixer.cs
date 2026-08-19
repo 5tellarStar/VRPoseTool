@@ -14,7 +14,6 @@ public class PlayerSizeFixer : MonoBehaviour
     [SerializeField] private float wantedShoulderHeight = 1f;
     [SerializeField] private float wantedHeight = 1f;
 
-
     private float timeHeld = 0f;
     private bool buttonHeld = false;
     private float controllerOffset = 0f;
