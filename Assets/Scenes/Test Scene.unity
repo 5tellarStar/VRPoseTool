@@ -1302,6 +1302,7 @@ GameObject:
   - component: {fileID: 667387628}
   - component: {fileID: 667387630}
   - component: {fileID: 667387631}
+  - component: {fileID: 667387632}
   m_Layer: 6
   m_Name: XR Origin (VR)
   m_TagString: Untagged
@@ -1421,6 +1422,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerColliderFixer
   head: {fileID: 114499097}
+--- !u!114 &667387632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667387624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7778af6d4a92864f9ede806d9b320d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TempPoseMaker
+  head: {fileID: 114499097}
+  rHand: {fileID: 915639079}
+  lHand: {fileID: 1445305185}
+  saveButton:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Save Button
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 436c2556-9072-4068-b85e-1ddeed63f95d
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &752506975
 GameObject:
   m_ObjectHideFlags: 0
@@ -1905,7 +1933,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1034428307}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3140,8 +3168,8 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 892580205}
   - {fileID: 106469481}
+  - {fileID: 1034428311}
   - {fileID: 667387625}
   - {fileID: 915639079}
   - {fileID: 1445305185}
-  - {fileID: 1034428311}
   - {fileID: 1401640540}

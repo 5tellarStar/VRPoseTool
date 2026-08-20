@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd19d637526614b4f948fe90975e967f, type: 3}
+  m_Name: Steady Pose
+  m_EditorClassIdentifier: Assembly-CSharp::PoseData
+  rHandPostion: {x: 0.18684988, y: -0.6231593, z: 0.01882622}
+  rHandRotation: {x: -0.37213284, y: 0.36361364, z: -0.41969025, w: 0.7437489}
+  lHandPostion: {x: -0.1707195, y: -0.630707, z: 0.00854408}
+  lHandRotation: {x: -0.36769557, y: -0.37161833, z: 0.47486898, w: 0.7079543}
