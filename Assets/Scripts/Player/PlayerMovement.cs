@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Animations.Rigging;
 using UnityEngine.InputSystem;
@@ -6,7 +7,9 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     private CharacterController characterController;
+
     [SerializeField] private InputActionProperty movementAction;
+    [SerializeField] private Transform forwardSorce;
     [SerializeField] private float accel = 20f;
     [SerializeField] private float friction = 2f; 
     [SerializeField] private float gravity = -9.82f;
@@ -32,8 +35,10 @@ public class PlayerMovement : MonoBehaviour
         if(characterController.isGrounded)
         {
             Vector2 movementInput = movementAction.action.ReadValue<Vector2>();
-        
-            newVelocity += accel * Time.deltaTime * new Vector3(movementInput.x, 0, movementInput.y);
+
+            Vector3 direction = Quaternion.Euler(0,forwardSorce.eulerAngles.y,0) * new Vector3(movementInput.x, 0, movementInput.y);
+
+            newVelocity += accel * Time.deltaTime * direction;
             newVelocity -= newVelocity * Mathf.Clamp01(friction * Time.deltaTime);
         }
         else
