@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PoseViewer : MonoBehaviour
 {
-    [SerializeField] private PoseData pose; 
+    public PoseData pose; 
     [SerializeField] private Transform head;
     [SerializeField] private Transform rHand;
     [SerializeField] private Transform lHand;
@@ -12,7 +12,7 @@ public class PoseViewer : MonoBehaviour
         rHand.position = head.TransformPoint(pose.rHandPostion);
         lHand.position = head.TransformPoint(pose.lHandPostion);
 
-        rHand.rotation = pose.rHandRotation;
-        lHand.rotation = pose.lHandRotation;
+        rHand.rotation = head.rotation * pose.rHandRotation ;
+        lHand.rotation = head.rotation * pose.lHandRotation;
     }
 }
