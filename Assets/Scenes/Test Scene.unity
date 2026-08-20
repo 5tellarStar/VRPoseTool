@@ -1303,6 +1303,7 @@ GameObject:
   - component: {fileID: 667387630}
   - component: {fileID: 667387631}
   - component: {fileID: 667387632}
+  - component: {fileID: 667387633}
   m_Layer: 6
   m_Name: XR Origin (VR)
   m_TagString: Untagged
@@ -1449,6 +1450,24 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+--- !u!114 &667387633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667387624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a9f968fc518a3348827d3e9e87ba54f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PoseListener
+  testPose: {fileID: 11400000, guid: 24d046ead0bc6c047b745f733ea79206, type: 2}
+  head: {fileID: 114499097}
+  rHand: {fileID: 915639079}
+  lHand: {fileID: 1445305185}
+  positionMargin: 0.2
+  rotationMargin: 40
 --- !u!1 &752506975
 GameObject:
   m_ObjectHideFlags: 0
