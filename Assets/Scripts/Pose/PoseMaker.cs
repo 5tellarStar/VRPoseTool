@@ -8,6 +8,7 @@ public class PoseMaker : MonoBehaviour
 
     [SerializeField] private UIKeyboard keyboard;
     [SerializeField] private PoseViewer poseViewer;
+    [SerializeField] private PoseTutorial poseTutorial;
     [SerializeField] private Transform head;
     [SerializeField] private Transform rHand;
     [SerializeField] private Transform lHand;
@@ -29,6 +30,12 @@ public class PoseMaker : MonoBehaviour
             pose.lHandRotation = Quaternion.Inverse(head.rotation) * lHand.rotation;
 
             poseViewer.pose = pose;
+
+            poseTutorial.pose.rHandPostion = pose.rHandPostion;
+            poseTutorial.pose.lHandPostion = pose.lHandPostion;
+            poseTutorial.pose.rHandRotation = pose.rHandRotation;
+            poseTutorial.pose.lHandRotation = pose.lHandRotation;
+
         }
     }
 
