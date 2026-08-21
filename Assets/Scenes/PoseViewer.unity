@@ -391,6 +391,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 797365752812849117, guid: adb5947f310c24349bfde7767c864472, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1331765504385848868, guid: adb5947f310c24349bfde7767c864472, type: 3}
       propertyPath: m_Name
       value: Pose Viewer
